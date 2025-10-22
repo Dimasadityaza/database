@@ -1,0 +1,36 @@
+{
+  "lookback_hours": 24,
+  "min_contact_quality": 50,
+  "cmc_limit": 100,
+  "dex_limit": 100,
+  "coingecko_limit": 50,
+  "min_market_cap": 0,
+  "max_market_cap": 0,
+  "request_delay": 0.5,
+  "coingecko_delay": 2.5,
+  "max_workers": 3,
+  "filters": {
+    "require_website": false,
+    "require_twitter": false,
+    "require_telegram": false,
+    "min_social_links": 1,
+    "chains": [],
+    "exclude_chains": [
+      "test",
+      "testnet"
+    ],
+    "min_price": 0,
+    "max_price": 0
+  },
+  "output": {
+    "excel_filename": "crypto_leads_pro_{timestamp}.xlsx",
+    "include_raw_data": false,
+    "auto_open_excel": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "crypto_monitor.log",
+    "max_size_mb": 10,
+    "backup_count": 3
+  }
+}
